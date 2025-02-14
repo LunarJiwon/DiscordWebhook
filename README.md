@@ -2,6 +2,25 @@
 
 Create webhooks simply and easily
 
+## Install
+### 1. Add the JitPack repository
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+```
+### 2. Add the dependency
+```xml
+<dependency>
+    <groupId>com.github.LunarJiwon</groupId>
+    <artifactId>DiscordWebhook</artifactId>
+    <version>releases</version>
+</dependency>
+```
+
 ## Example Java
 ### 1. Send to content
 
