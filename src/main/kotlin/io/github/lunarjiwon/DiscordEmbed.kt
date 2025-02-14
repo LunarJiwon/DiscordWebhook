@@ -1,4 +1,4 @@
-package kr.kro.jiwon1300
+package io.github.lunarjiwon
 
 import java.awt.Color
 import java.time.ZonedDateTime

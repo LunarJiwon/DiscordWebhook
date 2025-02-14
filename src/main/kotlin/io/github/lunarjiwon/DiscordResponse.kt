@@ -1,4 +1,4 @@
-package kr.kro.jiwon1300
+package io.github.lunarjiwon
 
 data class DiscordResponse (
     val code : Int,
