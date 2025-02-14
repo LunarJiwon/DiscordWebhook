@@ -26,12 +26,8 @@ Create webhooks simply and easily
 
 ```java
 DiscordWebhook webhook = DiscordWebhook("WebhookURL");
-webhook.
-
-setContent("Hello World!");
-webhook.
-
-execute(); // return org.jiwon.discordWebhook.DiscordResponse
+webhook.setContent("Hello World!");
+webhook.execute(); // return org.jiwon.discordWebhook.DiscordResponse
 ```
 
 ### 2. Send to embed
@@ -40,35 +36,25 @@ execute(); // return org.jiwon.discordWebhook.DiscordResponse
 DiscordWebhook webhook = DiscordWebhook("WebhookURL");
 
 DiscordEmbedBuilder discordEmbedBuilder = org.jiwon.discordWebhook.DiscordEmbedBuilder();
-discordEmbedBuilder.
-
-setTitle("Hello World!");
-discordEmbedBuilder.
-
-setDescription("Hello Description!");
+discordEmbedBuilder.setTitle("Hello World!");
+discordEmbedBuilder.setDescription("Hello Description!");
 
 DiscordEmbed discordEmbed = discordEmbedBuilder.build();
 
-webhook.
-
-addEmbed(discordEmbed);
-webhook.
-
-execute(); // return org.jiwon.discordWebhook.DiscordResponse
+webhook.addEmbed(discordEmbed);
+webhook.execute(); // return org.jiwon.discordWebhook.DiscordResponse
 ```
 
 ### 3. Exception handling
 
 ```java
 DiscordWebhook webhook = DiscordWebhook("WebhookURL");
-webhook.
-
-setContent("Hello World!");
+webhook.setContent("Hello World!");
 
 DiscordResponse discordResponse = webhook.execute(); // return org.jiwon.discordWebhook.DiscordResponse
-if(discordResponse ==400){
+if(discordResponse.code == 400){
         // Processing syntax when message sending via web hook fails.
-        }
+}
 ```
 
 ## Example Kotlin
@@ -99,7 +85,7 @@ val webhook = org.jiwon.discordWebhook.DiscordWebhook("WebhookURL")
 webhook.setContent("Hello World!")
 
 val discordResponse = webhook.execute() // return org.jiwon.discordWebhook.DiscordResponse
-if(discordResponse == 400){
+if(discordResponse.code == 400){
     // Processing syntax when message sending via web hook fails.
 }
 
