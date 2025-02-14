@@ -17,7 +17,7 @@ Create webhooks simply and easily
 <dependency>
     <groupId>com.github.LunarJiwon</groupId>
     <artifactId>DiscordWebhook</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
 </dependency>
 ```
 

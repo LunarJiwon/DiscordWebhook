@@ -60,7 +60,7 @@ class DiscordWebhook(
 
     fun execute(): DiscordResponse {
         if(content != null) jsonObject.put("content",content)
-        if(!embedsArray.isEmpty) jsonObject.put("embesds",embedsArray)
+        if(!embedsArray.isEmpty) jsonObject.put("embeds",embedsArray)
 
         val url = URI.create(webhookURL).toURL()
         val connection = url.openConnection() as HttpURLConnection
