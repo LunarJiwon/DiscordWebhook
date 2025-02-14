@@ -13,6 +13,7 @@ import java.time.format.DateTimeFormatter
 class DiscordWebhook(
     private val webhookURL:String,
 ){
+    //
     private val jsonObject = JSONObject()
 
     private val embedsArray = JSONArray()
