@@ -1,3 +1,5 @@
+package kr.kro.jiwon1300
+
 import org.json.JSONArray
 import org.json.JSONObject
 import java.io.BufferedReader
@@ -21,12 +23,12 @@ class DiscordWebhook(
         this.content = content
     }
 
-    fun setEmbed(embed:DiscordEmbed){
+    fun setEmbed(embed: DiscordEmbed){
         embedsArray.clear()
         embedsArray.put(getJsonFromEmbed(embed))
     }
 
-    fun addEmbed(embed:DiscordEmbed){
+    fun addEmbed(embed: DiscordEmbed){
         embedsArray.put(getJsonFromEmbed(embed))
     }
 

@@ -1,7 +1,8 @@
+package kr.kro.jiwon1300
+
 import java.awt.Color
-import java.time.LocalDateTime
 import java.time.ZonedDateTime
-import java.util.SimpleTimeZone
+import java.util.*
 
 data class DiscordEmbed(
     val title:String?,
@@ -9,7 +10,7 @@ data class DiscordEmbed(
     val url:String?,
     val color:Color?,
 
-    val footer:Footer?,
+    val footer: Footer?,
     val thumbnail: Thumbnail?,
     val image: Image?,
     val author: Author?,

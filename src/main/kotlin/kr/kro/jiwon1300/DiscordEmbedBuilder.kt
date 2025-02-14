@@ -1,6 +1,8 @@
+package kr.kro.jiwon1300
+
 import java.awt.Color
-import java.time.LocalDateTime
 import java.time.ZonedDateTime
+import java.util.*
 
 class DiscordEmbedBuilder() {
     private var title:String? = null
@@ -15,52 +17,52 @@ class DiscordEmbedBuilder() {
     private var timeStamp:ZonedDateTime? = null
     private var fields = ArrayList<DiscordEmbed.Field>()
 
-    fun setTitle(title:String):DiscordEmbedBuilder{
+    fun setTitle(title:String): DiscordEmbedBuilder {
         this.title = title
         return this
     }
 
-    fun setDescription(description:String):DiscordEmbedBuilder{
+    fun setDescription(description:String): DiscordEmbedBuilder {
         this.description = description
         return this
     }
 
-    fun setColor(color:Color):DiscordEmbedBuilder{
+    fun setColor(color:Color): DiscordEmbedBuilder {
         this.color = color
         return this
     }
 
-    fun setFooter(footer: DiscordEmbed.Footer):DiscordEmbedBuilder{
+    fun setFooter(footer: DiscordEmbed.Footer): DiscordEmbedBuilder {
         this.footer = footer
         return this
     }
 
-    fun setThumbnail(thumbnail: DiscordEmbed.Thumbnail):DiscordEmbedBuilder{
+    fun setThumbnail(thumbnail: DiscordEmbed.Thumbnail): DiscordEmbedBuilder {
         this.thumbnail = thumbnail
         return this
     }
 
-    fun setImage(image:DiscordEmbed.Image):DiscordEmbedBuilder{
+    fun setImage(image: DiscordEmbed.Image): DiscordEmbedBuilder {
         this.image = image
         return this
     }
 
-    fun setAuthor(author: DiscordEmbed.Author):DiscordEmbedBuilder{
+    fun setAuthor(author: DiscordEmbed.Author): DiscordEmbedBuilder {
         this.author = author
         return this
     }
 
-    fun setTimeStamp(timeStamp:ZonedDateTime):DiscordEmbedBuilder{
+    fun setTimeStamp(timeStamp:ZonedDateTime): DiscordEmbedBuilder {
         this.timeStamp = timeStamp
         return this
     }
 
-    fun setFields(fields: ArrayList<DiscordEmbed.Field>):DiscordEmbedBuilder{
+    fun setFields(fields: ArrayList<DiscordEmbed.Field>): DiscordEmbedBuilder {
         this.fields
         return this
     }
 
-    fun addField(field:DiscordEmbed.Field):DiscordEmbedBuilder{
+    fun addField(field: DiscordEmbed.Field): DiscordEmbedBuilder {
         this.fields.add(field)
         return this
     }
